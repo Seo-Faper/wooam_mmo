@@ -1,0 +1,33 @@
+{
+  "name": "wooam_mmo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "node server.js",
+    "serve": "nodemon server.js",
+    "dev": "concurrently \"npm run serve\" \"npm run dev:client\"",
+    "dev:client": "webpack serve --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "galmuri": "^2.39.9",
+    "jsonwebtoken": "^9.0.2",
+    "phaser": "^3.88.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "copy-webpack-plugin": "^13.0.0",
+    "html-webpack-plugin": "^5.6.3",
+    "nodemon": "^3.1.10",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  }
+}
